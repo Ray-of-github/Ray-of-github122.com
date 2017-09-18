@@ -1,0 +1,268 @@
+var LOL = (function() {
+	var PAGE_NAME = $('body').attr('id').replace(/^p\-/, ''),
+		fn = {},
+		util = {
+			fn: {}
+		},
+		init= function() {};
+	//msi头像弹层
+	var popcookie={
+		set : function(sName,sValue,iExpireSec,sDomain,sPath,bSecure){
+			if(sName==undefined) {
+				return;
+			}
+			if(sValue==undefined) {
+				sValue="";
+			}
+			var oCookieArray = [sName+"="+escape(sValue)];
+			if(!isNaN(iExpireSec)){
+				var oDate = new Date();
+				oDate.setTime(oDate.getTime()+iExpireSec*1000);
+				iExpireSec==0 ? '' : oCookieArray.push("expires=" + oDate.toGMTString()) ;
+			}
+			if(sDomain!=undefined){
+				oCookieArray.push("domain="+sDomain);
+			}
+			if(sPath!=undefined){
+				oCookieArray.push("path="+sPath);
+			}
+			if(bSecure){
+				oCookieArray.push("secure");
+			}
+			document.cookie=oCookieArray.join("; ");
+		},
+		get : function(sName,sDefaultValue){
+			var sRE = "(?:; |^)" + sName + "=([^;]*);?";
+			var oRE = new RegExp(sRE);
+			
+			if (oRE.test(document.cookie)) {
+				return unescape(RegExp["$1"]);
+			} else {
+				return sDefaultValue||null;
+			}
+		}
+	}
+	fn = {
+		tabBox: function(trigger, panel, cls) {
+			trigger.click(function() {
+				var _this = $(this),
+					index = _this.index();
+				if(cls) {
+					_this.addClass(cls).siblings().removeClass(cls);
+				}
+				panel.eq(index).show().siblings().hide();
+			});
+		},
+		loadJs: function(url, callback, options) {
+			options = options || {};
+			var head = document.getElementsByTagName('head')[0] || document.documentElement,
+				script = document.createElement('script'),
+				done = false;
+			script.src = url;
+			if (options.charset) {
+				script.charset = options.charset;
+			}
+			script.onerror = script.onload = script.onreadystatechange = function() {
+				if (!done && (!this.readyState || this.readyState == "loaded" || this.readyState == "complete")) {
+					done = true;
+					if (callback) {
+						callback();
+					}
+					script.onerror = script.onload = script.onreadystatechange = null;
+					head.removeChild(script);
+				}
+			};
+			head.insertBefore(script, head.firstChild);
+		}
+	};
+	var navList = $("#bNav");
+	//首页
+	if(PAGE_NAME === "index-page"){
+		navList.eq(0).addClass('on').siblings().removeClass('on')
+	}else if(PAGE_NAME === "video-page"){
+		navList.eq(3).addClass('on').siblings().removeClass('on')
+	}	
+})();
+//滑动
+function tabSlide(boxid,listid,previd,nextid,lwidth,cwidth,n,pageNo){
+	var box = $("#"+boxid),
+		list = $("#"+listid),
+		listLen = box.find("li").length,
+		prevBtn = $("#"+previd),
+		nextBtn = $("#"+nextid),
+		nowP = 0,
+		pnum = Math.ceil(listLen/n),
+		changeValue = true;
+	list.css({"width":lwidth*listLen});
+       nowP=Math.ceil(pageNo/n)-1;
+      list.css({"left":-nowP*cwidth});
+	prevBtn.unbind('click').click(function(){
+		if(changeValue==true){
+			if(nowP>0){
+				changeValue=false;
+				nowP--;
+				list.animate({"left":-nowP*cwidth},500);
+				if(nowP == 0){
+					prevBtn.addClass('gray');
+				}
+				nextBtn.removeClass('gray');
+				setTimeout(function(){
+					changeValue=true;					
+				}, 550)					
+			}			
+		}
+	})
+	nextBtn.unbind('click').click(function(){
+		if(changeValue==true){
+			if(nowP<(pnum-1)){
+				changeValue=false;
+				nowP++;
+				if(nowP == (pnum-1)){
+					nextBtn.addClass('gray');
+				}
+				list.animate({"left":-nowP*cwidth},500);
+				prevBtn.removeClass('gray');
+				setTimeout(function(){
+					changeValue=true;					
+				}, 550)	
+			}			
+		}
+	})
+}
+//赛程hover
+function scheduleHover(listid,boxid,isrc,itime){
+	var list = $(listid),hTimer = null,hValue = true,dTimer = null,tTimer = null;
+	list.hover(function(){
+		clearTimeout(tTimer);
+		_this = $(this);
+		tTimer = setTimeout(function(){
+			if(hValue){
+				hValue = false;
+				clearTimeout(hTimer);
+				clearTimeout(dTimer);
+				var icosrc = _this.find(".ico").attr("rel");
+				if(icosrc == "0"){
+					_this.find(".ico").css({
+						"display":"block",
+						"background-image": "url("+isrc+"?t=" + Date.now() + ")"
+					});
+					_this.find(".ico").attr("rel","1");
+					dTimer = setTimeout(function(){
+						_this.find("em").css({"display":"block"});
+						_this.find("p").addClass('bgn');
+						_this.find(".i-line").css({"display":"block"});
+					}, 100)
+				}				
+			}				
+		}, 200)
+	},function(){
+		clearTimeout(tTimer);
+		hTimer = setTimeout(function(){
+			_this.find(".ico").css({"display":"none"});
+			hValue = true;
+		}, itime)
+	});
+}
+//cookie方法
+jQuery.cookie = function(name, value, options) {
+    if (typeof value != 'undefined') { // name and value given, set cookie
+        options = options || {};
+        if (value === null) {
+            value = '';
+            options.expires = -1;
+        }
+        var expires = '';
+        if (options.expires && (typeof options.expires == 'number' || options.expires.toUTCString)) {
+            var date;
+            if (typeof options.expires == 'number') {
+                date = new Date();
+                date.setTime(date.getTime() + (options.expires * 24 * 60 * 60 * 1000));
+            } else {
+                date = options.expires;
+            }
+            expires = '; expires=' + date.toUTCString(); // use expires attribute, max-age is not supported by IE
+        }
+        var path = options.path ? '; path=' + options.path : '';
+        var domain = options.domain ? '; domain=' + options.domain : '';
+        var secure = options.secure ? '; secure' : '';
+        document.cookie = [name, '=', encodeURIComponent(value), expires, path, domain, secure].join('');
+    } else { // only name given, get cookie
+        var cookieValue = null;
+        if (document.cookie && document.cookie != '') {
+            var cookies = document.cookie.split(';');
+            for (var i = 0; i < cookies.length; i++) {
+                var cookie = jQuery.trim(cookies[i]);
+                // Does this cookie string begin with the name we want?
+                if (cookie.substring(0, name.length + 1) == (name + '=')) {
+                    cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+                    break;
+                }
+            }
+        }
+        return cookieValue;
+    }
+};
+function navFun(){
+	var box = $("#bNav"),list = box.find("li"),matchMenu = $("#matchMenu"),headerBox = $("#headerBox"),clickValue = true,dTimer = null,cTimer = null,iMatch = list.eq(1);
+	var cookieValue = $.cookie('LOLMatchCookie');
+	//console.log(cookieValue)
+	//如果不存在cookie
+	if(!cookieValue){
+		dTimer = setTimeout(function(){
+			clickValue = false;
+			matchMenuHide();
+			cTimer = setTimeout(function(){
+				clickValue = true;
+				iMatch.attr({"rel":'0'});
+				$.cookie('LOLMatchCookie', 'LOLMatchCookieValue',{expires: 7});	
+			}, 550)
+		}, 5000)		
+	}else{//如果存在cookiev
+		matchMenu.css({"top":"-150px"});
+		headerBox.css({"height":"80px"});	
+		iMatch.attr({"rel":'0'});
+	}
+	dTimer = setTimeout(function(){
+		clickValue = false;
+		matchMenuHide();
+		cTimer = setTimeout(function(){
+			clickValue = true;
+			iMatch.attr({"rel":'0'});
+		}, 550)
+	}, 5000)
+	function matchMenuHide(){
+		matchMenu.animate({"top":"-150px"}, 500);
+		headerBox.animate({"height":"80px"}, 500);		
+	}
+	function matchMenuShow(){
+		matchMenu.animate({"top":"0px"}, 500);
+		headerBox.animate({"height":"230px"}, 500);		
+	}
+	iMatch.click(function(){
+		if(clickValue){
+			clearTimeout(dTimer);
+			var rValue = iMatch.attr("rel");
+			if(rValue == "0"){
+				clickValue = false;
+				matchMenuShow();
+				cTimer = setTimeout(function(){
+					clickValue = true;
+					iMatch.attr({"rel":'1'});
+				}, 550)				
+			}
+			if(rValue == "1"){
+				clickValue = false;
+				matchMenuHide();
+				cTimer = setTimeout(function(){
+					clickValue = true;
+					iMatch.attr({"rel":'0'});
+				}, 550)				
+			}
+		}
+	})
+}
+navFun()
+
+//字体大小
+function doZoom(size){document.getElementById("newscontent").style.fontSize=size+"px";};
+/*  |xGv00|f00ae5b0893b4de945c0a0aacbb79ac7 */

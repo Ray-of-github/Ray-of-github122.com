@@ -1,0 +1,205 @@
+/**/
+.data-spr{ background: url(http://ossweb-img.qq.com/images/lol/match/data/list_sp.png) no-repeat;}
+.location-main{ background-position: 5px 5px;}
+/* µº∫Ω  */
+.g-top{background:#040404;height:80px;}
+.g-top-box{width:1280px;height:80px;margin:0 auto;}
+.weblogo{ background:url(http://ossweb-img.qq.com/images/lol/lpl/logo.jpg) no-repeat;width:156px;height:58px;margin:11px 475px 0 22px; }
+.search-box{ background:url(http://ossweb-img.qq.com/images/lol/lpl/search_bg.jpg) no-repeat;width:302px;height:40px;margin:20px 0 0 0;}
+.search{background:#040404;border:none;width:225px;height:34px;line-height:34px;margin:2px 0 0 25px;color:#c49f58;font-size:14px;}
+.login{line-height:50px;padding:14px 0 0 20px;}
+.login a{color:#fff;}
+#loginedInfo{padding-left:8px;}
+.p55{padding-top:55px;}
+.g-top{background:#040404;height:80px;font-size: 16px;}
+.g-top-box{width:1280px;height:80px;margin:0 auto;}
+.weblogo,.lpllogo{ background:url(http://ossweb-img.qq.com/images/lpl/web201612/logo.jpg) no-repeat; }
+.weblogo{width:156px;height:58px;margin:11px 15px 0 22px;}
+.lpllogo{ background-position:-174px 0;width:62px;height:58px;margin:11px 435px 0 0; }
+.search-box{ background:url(http://ossweb-img.qq.com/images/lol/lpl/search_bg.jpg) no-repeat;width:302px;height:40px;margin:20px 0 0 0;}
+.search{background:#040404;border:none;width:225px;height:34px;line-height:34px;margin:2px 0 0 25px;color:#c49f58;font-size:14px;}
+.login{line-height:50px;padding:14px 0 0 20px;color:#666;}
+.login a{color:#fff;font-size: 16px;}
+#loginedInfo{padding-left:8px;}
+.keyword{position:absolute;left:25px;top:9px;}
+.keyword a{margin-right:10px;color:#cea04a;text-decoration:underline;}
+.searchbtn{width:50px;height:40px;position:absolute;right:0px;top:0px;text-indent:-999em;}
+.g-nav-ul li span,.g-nav-oth li span,.rotatebox .hd li,.rotatebox .hd .on,.show-list,.video-con .ico,.dynamic-nav li,.dynamic-nav li .on,.rotatebox-s .hd li,.rotatebox-s .hd .on,.top-news1 .sline,.top-news2 .sline,.g-nav-ul .tv,.floatnav .totop{background:url(http://ossweb-img.qq.com/images/lol/lpl/sprite_ico.png) no-repeat;}
+
+/* µº∫Ω  */
+.g-nav-bg{width:100%;background:#151619;opacity:.8;height:55px;filter:alpha(opacity=80);top:0;left:0; z-index:9}
+.g-nav{width:100%;height:55px;top:0;left:0; z-index:9;font-size: 16px;}
+.g-nav-box{width:1280px;height:55px;margin:0 auto;}
+.g-nav-ul{padding-left:26px;width:400px;}
+.g-nav-ul .g-nav-li,.g-nav-oth .g-nav-li{float:left;line-height:55px;}
+.g-nav-ul .g-nav-li a{font-weight:bold;}
+.g-nav-ul .g-nav-li a,.g-nav-oth .g-nav-li a{color:#e2e2e2;float:left;line-height:55px;}
+.g-nav-box a.grey,.g-nav-box .grey:hover{color: #656565 !important;}
+.g-nav-ul .g-nav-li span,.g-nav-oth .g-nav-li span{ background-position:-52px -100px;float:left;width:20px;height:20px;margin:20px 8px 0 0;}
+.g-nav-oth{padding-left:26px;width:800px;}
+.g-nav-oth .g-nav-li a,.overlist a{font-size:14px;color:#fff;}
+.g-nav-oth .g-nav-li a:hover,.g-nav-ul .g-nav-li a:hover,.overlist a:hover{color:#cea04a;}
+.g-nav-oth li i.hot,.g-nav-oth li i.new{background:#eb3200;width:16px;height:16px;line-height:15px;border-radius:8px;color:#fff;font-size:12px;float:left;margin:20px 0 0 5px;text-align:center;}
+.g-nav-ul .tv{width:82px;background-position:-50px -130px;}
+.overlist-bg{width:90px;height:0;filter:alpha(opacity=80);opacity:.8;background:#151619;position:absolute;right:-5px;top:55px;overflow:hidden;}
+.overlist{width:90px;height:0;position:absolute;right:-5px;top:55px;overflow:hidden;}
+.g-nav-oth .overlist a{display:block;width:60px;height:28px;line-height:20px;margin:0 auto 10px auto;text-align:center;border-bottom:1px solid #626262;float:none;}
+.cimi-model-crumbs {box-shadow: 0 5px 12px #e2e2e2;}
+.crumbs{background:url(http://ossweb-img.qq.com/images/lpl/web201612/house.png) left center no-repeat;width: 1210px;height:55px;line-height:55px;padding-left:30px;font-size:16px;margin:0 auto;}
+.crumbs a{font-size:16px;float:left;color: #555555;}
+.crumbs .sline{background: url(http://ossweb-img.qq.com/images/lpl/web201612/sprite_ico.png) -78px -98px no-repeat;float:left;width:20px;height:20px;margin:18px 10px 0 10px;}
+.crumbs .cimi-this{ color: #d1ab57;}
+#footer_ied {text-align: center;height: 156px;padding-top: 0;}
+#footer_ied .wrap_ied {width: 1240px;margin: 0 auto;padding: 40px 0 0;}
+#footer_ied p {color: #6e6e6e;line-height: 24px;font-size: 10px;}
+#footer_ied a {color: #6e6e6e;font-size: 12px}
+.footer-box{ background:url(http://ossweb-img.qq.com/images/lpl/web201612/foot_bg.jpg) center top no-repeat;height:603px;padding-top:0;}
+.footer-nav{width:940px;height:444px;margin:0 auto;padding-left:180px;}
+.footer-t{font-size:20px;color:#fff;padding-bottom:10px;margin-top:30px;}
+.footer-nav li{width:150px;text-align:center;}
+.footer-nav li a{display:block; text-align:center;margin-top:10px; color: #d9d9d9;}
+.location{padding:55px 0 0 0;height:55px;}
+/*data_list*/
+.data_list{width: 1240px; margin: 0 auto; overflow: hidden;}
+.list_s1{font-size: 25px; color: #666666; line-height: 35px; font-weight: bold;}
+.list_ul{width: 1255px; overflow: hidden; padding: 25px 0;}
+.list_ul li{width: 236px; height: 185px; float: left; margin-right: 15px;}
+.list_ul li a{width: 100%; height: 100%; display: block; position: relative;}
+.list_ul li a:hover{text-decoration: none;}
+.list_ul li img{width: 232px; height: 126px; display: block; border: solid #bd8f38 2px; margin: 0 auto 15px;}
+.list_ul li p{font-size: 16px; color: #989796; line-height: 25px; text-align: center;}
+.list_ul li a .list_cover_1{position: absolute;width:100%;height: 100%;top: 0;left: 0;display: none;background:rgba(0,0,0,0.3); filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000,endColorstr=#4C000000);}
+.list_ul li a .list_cover_ico{width: 70px; height: 70px; position: absolute; top: 30px; left: 0; right: 0; margin: 0 auto ;display: none;background: url(http://ossweb-img.qq.com/images/lol/match/data/list_vid.png) 0 0 no-repeat;}
+/*contrast*/
+.contrast_bg{background: url(http://ossweb-img.qq.com/images/lol/match/data/contrast_bg.jpg) center top no-repeat; height: 1204px;}
+.contrast{padding-top: 58px; width: 1240px; margin: 0 auto;}
+.contrast_top{height: 615px;}
+.con_l{background: url(http://ossweb-img.qq.com/images/lol/match/data/cont_l_bg.png) no-repeat; width: 260px; height: 535px; float: left;}
+.m_r{margin-right: 29px;}
+.con_img_div{width: 151px; height: 220px; padding: 35px 50px 0;}
+.con_img_div p{font-size: 16px; color: #9d9d9d; text-align: center; line-height: 25px;}
+.con_p1{font-size: 12px; color: #a8a8a8; width: 98px; height: 22px; border: solid #727272 1px; text-align: center; margin: 0 auto 20px; line-height: 22px;}
+.edg_img{width: 192px; height: 155px; display: block; margin: 0 auto;}
+
+.con_c{width: 662px; height: 535px; float: left;}
+.con_c_p{font-size: 40px; color: #f1eeee; text-align: center; line-height: 45px; font-weight: bold;}
+.con_c_p1{font-size: 12px; color: #545454; text-align: center; line-height: 18px;}
+.db_div{height: 114px;}
+.db_div p{float: left; height: 114px;}
+.db_div .s1{width: 195px; font-size: 98px; color: #1c8bea; font-weight: bold; line-height: 98px;}
+.db_div .s1 span{font-size: 36px; vertical-align:top; display: inline-block; line-height: 50px;}
+.db_div .s2{width: 266px; height: 98px; font-size: 40px; color: #626262; line-height: 98px; font-weight: bold; text-align: center;}
+.db_div .s3{width: 195px; font-size: 98px; color: #e94715; font-weight: bold; line-height: 98px; text-align: right;}
+.db_div .s3 span{font-size: 36px; vertical-align:top; display: inline-block; line-height: 50px;}
+/*ÊàòÈòüÊï∞ÊçÆÂØπÊØî*/
+.sjb_div{overflow: hidden; padding-top: 40px;}
+.sjb_div_left{width: 260px; float: left;}
+.sjb_div_left div,.sjb_div_right div{overflow: hidden; margin-bottom: 20px;}
+.sjb_div .t1{width: 205px; height: 15px; position: relative; float: left;}
+.sjb_div .t2{background: #2b2b2b;}
+.sjb_div .c{ height: 15px; position: absolute; top: 0; left: 0; background: #c49f58;}
+.sjb_div .c1{width: 66%;}
+.sjb_div .c2{width: 50%;}
+.sjb_div .c3{width: 92%;}
+.sjb_div .c4{width: 62%;}
+.sjb_div .c5{width: 60%;}
+.sjb_div .z{ height: 15px; position: absolute; top: 0; right: 0; background: #c49f58;}
+.sjb_div .z1{width: 66%;}
+.sjb_div .z2{width: 50%;}
+.sjb_div .z3{width: 72%;}
+.sjb_div .z4{width: 62%;}
+.sjb_div .z5{width: 50%;}
+.sjb_div .d{ height: 15px; position: absolute; top: 0; left: 0; background: #c49f58;}
+.sjb_div .d1{width: 66%;}
+.sjb_div .d2{width: 95%;}
+.sjb_div .d3{width: 60%;}
+.sjb_div .d4{width: 78%;}
+.sjb_div .d5{width: 68%;}
+.sjb_div .d6{width: 30%;}
+.sjb_div .v{ height: 15px; position: absolute; top: 0; right: 0; background: #c49f58;}
+.sjb_div .v1{width: 66%;}
+.sjb_div .v2{width: 92%;}
+.sjb_div .v3{width: 58%;}
+.sjb_div .v4{width: 80%;}
+.sjb_div .v5{width: 68%;}
+.sjb_div .v6{width: 50%;}
+.sjb_div .sj{font-size: 15px; color: #b8b8b8; line-height: 15px; float: left; width: 50px; text-align: right;}
+.sjb_div .sj1{font-size: 15px; color: #b8b8b8; line-height: 15px; float: left; width: 50px; text-align: left;}
+.img_div{overflow: hidden; text-align: left;}
+.img_div img{width: 30px; height: 30px; display: inline-block; margin-right: 10px; border-radius: 25px; overflow: hidden;}
+.img_div1{overflow: hidden; text-align: right;}
+.img_div1 img{width: 30px; height: 30px; display: inline-block; margin-left: 10px; border-radius: 25px; overflow: hidden;}
+.sjb_div_center{width: 140px; overflow: hidden; float: left;}
+.sjb_div_center p{font-size: 16px; color: #929292; line-height: 17px; margin-bottom: 18px; text-align: center;}
+.sjb_div_center .s1{line-height: 30px;}
+.sjb_div_right{width: 260px; float: left;}
+/**/
+.contrast_players{overflow: hidden;}
+.players_ul{height: 80px; width: 460px;margin: 0 auto; padding-top: 15px;}
+.players_ul li{width: 74px; height: 23px; font-size: 14px; color: #565656; line-height: 23px; text-align: center; border: solid 1px #3d3d3d; float: left; margin-right: 18px;cursor:pointer; }
+.players_ul .on,.players_ul li:hover{width: 76px; height: 35px; background: url(http://ossweb-img.qq.com/images/lol/match/data/tb.png) no-repeat; border: none; color: #fff; font-weight: bold;}
+.players_con{overflow: hidden;}
+.players_con_l{width: 274px; height: 275px; float: left; position: relative}
+.players_con_l .tab-btn-box{width: 274px; height: 275px; position: absolute; left: 0; top: 0; }
+.players_con_l .tab-btn-box  a{width: 21px; height: 31px; display: block; position: absolute; top: 88px; text-indent: -9999px;}
+.players_con_l .tab-btn-box .prev{left: 0}
+.players_con_l .tab-btn-box .next{right:0}
+.players_con_l .tab-box{width: 208px; height: 208px; background: url(http://ossweb-img.qq.com/images/lol/match/data/players_xbg.png) no-repeat; padding: 0 33px; display: none;}
+.players_con_l div img{width: 208px; height: 208px; display: block; border-radius: 105px; overflow: hidden;}
+.players_con_l p{font-size: 18px; color: #a9a9a9; font-weight: bold; line-height: 25px; text-align: center;  margin-top: 10px;}
+.sjd_fl{width: 662px; float: left; padding-top: 0; margin-right: 10px;}
+.mr_1{margin-right: 15px;}
+.sjb_div_center .s2{line-height: 34px; margin-bottom: 21px;}
+
+
+.recent_game{overflow: hidden; padding: 100px 0;}
+.recent_match{width: 1240px; margin: 0 auto; overflow: hidden;}
+.recent_p{font-size: 22px; color: #7a7a7a; line-height: 25px; margin-bottom: 20px; overflow: hidden;}
+.recent_p span{float: left;}
+.recent_p a{float: right; color: #b0b0b0;}
+.recent_p a i{width: 18px; height: 18px; display: inline-block; vertical-align: middle; margin-right: 3px; font-size: 12px; line-height: 10px; text-align: center; border: solid 1px #ababab; border-radius: 25px;}
+.match_ul{width: 1240px;height: 50px;line-height:50px;background: #ececec;color: #737373;text-align: center;font-weight: bold;}
+.match_ul li{height:50px;line-height: 50px;overflow: hidden;float: left;}
+.match_ul .match-status{width: 120px;}
+.match_ul .match-date{width: 170px;}
+.match_ul .match-result{width: 500px;}
+.match_ul .match-type{width: 250px;}
+.match_ul .match-watch{width: 200px;}
+.match-list{width: 1240px;padding-bottom: 40px}
+.match-list li{height: 69px;line-height: 69px;border-bottom: 1px solid #e4e4e5;position: relative;}
+.match_list{width: 1240px; overflow: hidden; margin-bottom: 30px;}
+.match_list li {height: 69px; border-bottom: 1px solid #e4e4e5; position: relative;}
+.match_list .s1{ color: #c49f58;}
+.li_h{ height: 69px; float: left; position: relative; z-index: 2;}
+.list_status{width: 120px;  font-size: 14px; color: #b1b1b1; line-height: 69px; text-align: center;}
+
+.list_date{width: 170px; font-size: 14px; color: #949494; text-align: center; line-height: 16px; padding-top: 14px; height: 55px;}
+.list_date span{font-size: 28px; color: #5b5b5b; line-height: 28px; font-weight: bold;}
+
+.list_result{width: 500px;}
+.team_left{font-size: 14px; color: #555555; font-weight: bold;width: 180px; text-align: right; padding-top: 25px; float: left;}
+.team_right{font-size: 14px; color: #555555; font-weight: bold;width: 180px; text-align: left; padding-top: 25px; float: left;}
+.match_score{width: 110px; height: 50px; text-align: center; position: relative; float: left; line-height: 69px; margin-top: 9px; padding: 0 15px;}
+.vs{font-size: 25px; color: #c49f58; text-align: center; line-height: 50px; text-align: center; width: 100%; height: 100%; display: block; font-weight: bold;}
+.score_div{overflow: hidden; margin: 0 auto; width: 92px;}
+.score_div p{width: 37px; height: 46px; border-radius: 3px; background: #3c3c3c; float: left; line-height: 46px; color: #fff; font-size: 38px; font-weight: bold;}
+.score_div span{font-size: 40px; width: 18px; height: 46px; display: block; float: left; line-height: 42px; text-align: center; color: #3c3c3c;}
+
+.list_type{width: 250px; font-size: 14px; color: #949494; text-align: center; line-height: 16px; padding-top: 14px; height: 55px;}
+.list_type span{font-size: 14px; color: #555555; line-height: 28px; font-weight: bold;}
+.list_watch{width: 200px;}
+.list_watch a{width: 116px;height: 36px;border-radius: 40px;text-align: center;display: block;line-height: 36px;margin: 14px auto 0;font-weight: bold;border: 2px solid #c49f58;color: #c49f58;}
+.list_watch a:hover{text-decoration: none; background: #c49f58; color: #fff;}
+.list_watch .btn{color: #00a483; border: 2px solid #00a483;}
+.list_watch .btn:hover{background: #00a483; color: #fff;}
+
+.bor_l, .bor_r{ width: 5px;height: 69px;position: absolute;top: 0;overflow: hidden;background: #c4a15a;display: none;z-index: 2;}
+.bor_l{left: 0;}
+.bor_r{right: 0;}
+.match_list li:hover .bor_l,.match_list li:hover .bor_r{ display: block;}
+
+
+.pages_bottom{width: 100%; overflow: hidden; text-align: center;}
+.pages_bottom a, .pages_bottom span{ display: inline-block;height: 28px;line-height: 28px;border: 2px solid #eaeaea;padding: 0 8px;background: #ececec;padding: 0 15px;margin: 0 5px;border-radius: 32px;color: #999;}
+.pages_bottom a:hover,.pages_bottom .pagenow{ background: none; border-color: #c6a864; text-decoration: none;}
+.pages_bottom input{ width: 32px; height: 32px; margin: 0 8px; background: none;  border-radius: 50%; color: #a1a1a1; text-align: center; line-height: 32px;}/*  |xGv00|e631353c82277bcb8eecae6d2b47c4b0 */
