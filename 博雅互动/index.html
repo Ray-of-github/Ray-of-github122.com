@@ -1,0 +1,232 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>博雅互动</title>
+	<style type="text/css">
+		*{margin: 0;padding: 0;}
+
+		/*公用类*/
+		/*版心 宽度1000 居中*/
+		.inner_center{
+			width: 1000px;
+			margin: 0 auto;
+		}
+
+		.fl{
+			float: left;
+		}
+
+		.fr{
+			float: right;
+		}
+		
+		.lsn{
+			list-style: none;
+		}
+		
+		/*默认字体  14px  微软雅黑*/
+		body{
+			font-family: "Microsoft YaHei", "宋体";
+			font-size: 14px;
+		}
+
+
+		/*头部*/
+		.header{
+			height: 58px;
+			background-color: #191c3b;
+		}
+		.header .nav li{
+			float: left;
+			text-align: center;
+		}
+
+		.header .nav li a{
+			color: #818497;
+			text-decoration: none;
+			line-height: 58px;
+			display: block;
+			width: 100px;
+			border-left: 1px #252848 solid;
+		}
+		.header .nav li a.last{
+			border-right: 1px #252848 solid;
+		}
+
+		.header .nav li a.current{
+			background-color: #252848;
+			color: #E2E4ED;
+		}
+		.header .nav .join{
+			float: left;
+			margin-left: 48px;
+			margin-top: 12px;
+		}
+
+		/*Banner*/
+		.banner{
+			background: url(images/banner.jpg) no-repeat center top;
+			height: 465px;
+		}
+
+
+
+		/*Video*/
+		.video{
+			margin-top: 50px;
+			border-bottom: 1px #DBE1E7 solid;
+
+			/*清楚浮动*/
+			overflow: hidden;
+		}
+
+		.video li{
+			float: left;
+
+			width: 218px;
+			margin-right: 43px;
+		}
+
+		.video li.last{
+			width: 217px;
+			margin-right: 0;
+		}
+
+		.video li h3{
+			font-size: 16px;
+			line-height: 24px;
+			margin-top: 9px;
+			text-align: center;
+		}
+		.video li a{
+			display: block;
+			line-height: 24px;
+			text-decoration: none;
+			font-size: 12px;
+			color: #00CF4A;
+			text-align: center;
+			margin-bottom: 42px;
+		}
+
+		/*新闻和招聘*/
+		.news_jobs{
+			background: url(images/indexmainbg.jpg) no-repeat center bottom;
+			margin-top: 53px;
+			height: 367px;
+		}
+
+		.news_jobs .news{
+			width: 480px;
+			float: left;
+			height: 200px;
+			background: url(images/bynewsbg.jpg) no-repeat 0 0;
+			padding-left: 20px;
+			padding-top: 110px;
+		}
+		.news li {
+			border-bottom: 1px #DBE1E7 solid;
+			padding: 10px 0;
+		}
+		.news li a{
+			font: 16px/30px "宋体";
+			color: #444767;
+			text-decoration: none;
+		}
+
+		.news li span{
+			font-size: 12px;
+			color: #AEBED0;
+			margin-right: 22px;
+			position: relative;
+			bottom: 1px;
+		}
+
+
+
+
+		.news_jobs .jobs{
+			width: 500px;
+			height: 310px;
+			float: left;
+			background: url(images/byhrbg3.jpg) no-repeat 0 0;
+		}
+
+
+
+	</style>
+</head>
+<body>
+	<div class="header">
+	<div class="inner_center">
+		<div class="logo fl"><img src="images/logo.png" alt="" /></div>
+		<div class="nav fr">
+			<ul class="lsn fl">
+				<li><a href="#" class="current">首页</a></li>
+				<li><a href="#">博雅游戏</a></li>
+				<li><a href="#">博雅新闻</a></li>
+				<li><a href="#">关于我们</a></li>
+				<li><a href="#">客服中心</a></li>
+				<li><a href="#" class="last">投资者关系</a></li>
+			</ul>
+
+			<a href="#" class="join"><img src="images/join_us.png" alt="" /></a>
+		</div>
+	</div>
+	</div>
+
+	<div class="banner"></div>
+
+	<div class="video inner_center">
+		<ul class="lsn">
+			<li>
+				<img src="images/bpt.jpg" alt="" />
+				<h3>BPT宣传片</h3>
+				<p><a href="#">点击播放<img src="images/right.png" alt="" /></a></p>
+			</li>
+			<li>
+				<img src="images/bpt.jpg" alt="" />
+				<h3>BPT宣传片</h3>
+				<p><a href="#">点击播放<img src="images/right.png" alt="" /></a></p>
+			</li>
+			<li>
+				<img src="images/bpt.jpg" alt="" />
+				<h3>BPT宣传片</h3>
+				<p><a href="#">点击播放<img src="images/right.png" alt="" /></a></p>
+			</li>
+			<li class="last">
+				<img src="images/bpt.jpg" alt="" />
+				<h3>BPT宣传片</h3>
+				<p><a href="#">点击播放<img src="images/right.png" alt="" /></a></p>
+			</li>
+		</ul>
+	</div>
+
+	<div class="news_jobs">
+		<div class="inner_center">
+			<div class="news">
+				<ul class="lsn">
+					<li>
+						<span>09/28</span><a href="#1234">2015博雅国际博客大赛（BPT）在澳门落幕</a>
+					</li>
+					<li>
+						<span>09/28</span><a href="#">2015博雅国际博客大赛（BPT）在澳门落幕</a>
+					</li>
+					<li>
+						<span>09/28</span><a href="#">2015博雅国际博客大赛（BPT）在澳门落幕</a>
+					</li>
+					<li>
+						<span>09/28</span><a href="#">2015博雅国际博客大赛（BPT）在澳门落幕</a>
+					</li>
+				</ul>
+			</div>
+			<div class="jobs"></div>
+		</div>
+	</div>
+
+
+
+
+
+</body>
+</html>
